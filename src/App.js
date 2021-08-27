@@ -83,7 +83,8 @@ export default class App extends React.Component{
     this.setState({isCityError: false, cityErrMsg:''});
     const rpc=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cit}&appid=${API_KEY}`)
     const res = await rpc.json();
-    if(res.cod === '401'){
+    console.log({res});
+    if(res.cod == 401){
       this.setState({
         cit:'',
         city: '',
@@ -99,7 +100,7 @@ export default class App extends React.Component{
         errMsg: 'Invalid Credentials...!'
       });
     }
-    if(res.cod === '200') {
+    if(res.cod == 200) {
       this.setState({
         city: res.name,
         country: res.sys.country,
@@ -115,7 +116,7 @@ export default class App extends React.Component{
       });
       this.get_WeatherIcon(this.weatherIcons, res.weather[0].id);
     } 
-    if(res.cod === '404') {
+    if(res.cod == 404) {
       this.setState({
         cit:'',
         city: '',
