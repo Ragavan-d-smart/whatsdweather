@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './weatherComponent.css';
+import 'weather-icons/css/weather-icons.min.css';
 
 
 export const Weather = (props) => {

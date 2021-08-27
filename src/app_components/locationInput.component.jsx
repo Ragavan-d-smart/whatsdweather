@@ -16,15 +16,6 @@ export const LocationInput = props => {
                                 value={props.cit}
                                 className="form-control"></input>
                         </div>
-                        {/* <div className="col-md-3 col-sm-12">
-                            <input type="text"
-                                placeholder="Country" 
-                                aria-label="country" 
-                                name="country" 
-                                onChange={props.setCon}
-                                value={props.con}
-                                className="form-control"></input>
-                        </div> */}
                         <button 
                             className="btn btn-warning"
                         >Get Weather</button>
