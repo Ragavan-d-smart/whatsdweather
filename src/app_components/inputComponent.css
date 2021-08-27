@@ -1,0 +1,16 @@
+.container {
+  margin: 20px auto;
+}
+
+input[name="city"],
+input[name="country"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+}
+
+input:focus {
+  background-color: transparent;
+  box-shadow: none !important;
+}
